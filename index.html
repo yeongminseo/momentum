@@ -11,6 +11,7 @@
     <script src="js/background.js" defer></script>
     <script src='js/quote.js' defer></script>
     <script src='js/todo.js' defer></script>
+    <script src="js/weather.js" defer></script>
 </head>
 <body>
     <h2 id="clock">00:00</h2>
@@ -18,15 +19,20 @@
         <input required type="text" placeholder="What is your name?" maxlength="15" minlength="3">
         <button>LogIn</button>
     </form>
+    <div class="logout_btn"></div>
     <h1 id="greeting" class="hidden"></h1>
     <form id="todo-form">
-        <input type="text" placeholder="오늘 할일을 적어보세요" required onsubmit="return false;">
+        <input type="text" placeholder="오늘 할일을 적어보세요" required >
         
     </form>
     <ul id="todo-list">
     </ul>
-    
     <span id="quote"></span>
     <span id="author"></span>
+    <div id="weather">
+        <span class="city"></span>
+        <span class="weather"></span>
+        <span class="temp"></span>
+    </div>
 </body>
 </html>
