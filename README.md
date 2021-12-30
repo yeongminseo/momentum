@@ -18,3 +18,17 @@ typeof date;
 object.property 와 같은 형식으로 사용할수있다
 
 --오브젝트.속성 과 같이 접근할수 있는것--
+
+## 로컬스트리지 활용
+
+localStorage.setItem("키",값)
+localStorage.getItem("키",값)
+
+if문을 활용해 로컬스토리지 특정 키값이 비워져있는지 (null값인지) 확인후
+특정요소를 보여주거나, 숨기거나 할수있다.
+
+## HTML에 엘리먼트 생성
+
+document.creat("html태그")==
+만들어진 요소는 property 형식으로 각 속성을 지정할수있으며
+각 객체선택후 appenChild로 자식요소로 부여할수있다.
