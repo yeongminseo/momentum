@@ -1,5 +1,31 @@
+*{margin:0; padding:0; list-style: none; text-decoration: none; color:white}
+body{font-family: 'Noto Sans KR', sans-serif;}
 .hidden{
     display:none;
 }
-img{width:100%;}
-a {color:black; width:100px}
+
+img{width:100%; position: absolute; top:0; left:0; z-index: -1;}
+a { width:100px}
+body {height:100vh; overflow: hidden; position: relative;}
+.contents_wrap {position: absolute; top:50%; left:50%; transform: translate(-50%,-50%);
+text-align: center; }
+h2#clock{font-size: 7rem; font-weight: 600;}
+h1#greeting{font-size: 2.8rem; margin-bottom: 1rem; font-weight: 600;}
+
+.logout_btn,#weather{text-align: right;}
+
+input {border:none; outline:none; background:none;  
+     text-align: center; padding-bottom: 0.3rem; font-weight: 300;} 
+#login-form input{width:400px;font-size: 1.6rem; margin-bottom: 1.3rem; margin-bottom: 0.6rem;}
+#todo-form input {width:340px; font-size: 1rem;}
+#login-form input::placeholder {color:rgb(216, 216, 216); font-size: 1.6rem;}
+#todo-form input::placeholder{color:rgb(185, 185, 185); font-size: 1rem;}
+
+input{border-bottom: 2px solid #fff;}
+button {border:none; background: none;} 
+
+#todo-list {position: absolute; bottom:2%; right:2%; z-index: 1; }
+#todo-list li {background: rgb(0,0,0,0.3); text-align: center; width:200px; padding:0.3rem 0;
+transition: 0.3s all;}
+#todo-list li:hover {background: rgb(0,0,0,0.7);}
+#quote {padding-top: 0.4rem; display: inline-block; }

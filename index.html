@@ -1,10 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    
+    <!--노토산스 kr 연동-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+
+    <!--노토산스 En 연동-->
     <link rel="stylesheet" href="./css/style.css">
     <script src="js/greeting.js" defer></script>
     <script src="js/clock.js" defer></script>
@@ -14,25 +23,29 @@
     <script src="js/weather.js" defer></script>
 </head>
 <body>
-    <h2 id="clock">00:00</h2>
-    <form id ="login-form" class="hidden">
-        <input required type="text" placeholder="What is your name?" maxlength="15" minlength="3">
-        <button>LogIn</button>
-    </form>
-    <div class="logout_btn"></div>
-    <h1 id="greeting" class="hidden"></h1>
-    <form id="todo-form">
-        <input type="text" placeholder="오늘 할일을 적어보세요" required >
-        
-    </form>
-    <ul id="todo-list">
-    </ul>
-    <span id="quote"></span>
-    <span id="author"></span>
+    <div class="logout_btn"><i class="fas fa-sign-out-alt"></i></div>
     <div id="weather">
         <span class="city"></span>
         <span class="weather"></span>
         <span class="temp"></span>
     </div>
+    <div class="contents_wrap">
+        <h2 id="clock">00:00</h2>
+        <form id ="login-form" class="hidden">
+            <input required type="text" placeholder="이름을 입력해 로그인해주세요." maxlength="15" minlength="3">
+            <!--<button>LogIn</button>-->
+        </form>
+
+        <h1 id="greeting" class="hidden"></h1>
+        
+        <form id="todo-form">
+            <input type="text" placeholder="해야할 일들을 적어보세요." required >
+        </form>
+        
+        <span id="quote"></span>
+        <span id="author"></span>
+    </div>
+    <ul id="todo-list">
+    </ul>
 </body>
 </html>

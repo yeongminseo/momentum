@@ -2,7 +2,7 @@ const todoForm = document.getElementById("todo-form")
 const todoListUl = document.getElementById("todo-list")
 const todoFormInput = todoForm.querySelector("input")
 let todoSaved = []
-
+console.log(todoSaved)
 function saveToStTd (){
     localStorage.setItem("todo",JSON.stringify(todoSaved)) //로컬스토리지에 todo라는 키값으로 todoSaved안에 있는 배열을 "문자화" 해서 집어넣는다.
     //집어넣을땐 문자화 (JSON.stringfy) , 꺼내서 활용할땐 변수화(JSON.parse)
@@ -25,7 +25,6 @@ function handleToDoSubmit (ev){
 function deleteHandler(e){
      const li = e.target.parentElement
      li.remove();
-
     console.log(typeof(li.id),todoSaved[0].id)
 
     //todoSaved는 배열이기때문에 forEach처럼 아이디를받아 전체를 돌리지않고
